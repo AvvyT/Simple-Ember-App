@@ -1,5 +1,14 @@
 {{!-- The following component displays Ember's default welcome message. --}}
-<WelcomePage />
-{{!-- Feel free to remove this! --}}
 
+{{!-- {{#simple-modal enabled=true title="--Simple Modal--"}}
+Modal create with Ember. (Click anywhere to dismiss this notification.)
+{{/simple-modal}} --}}
+<h1 id="title">Simple Ember-App</h1>
+
+{{#unless hideNav}}
+<nav>
+    <LinkTo @route="about">Modal</LinkTo>
+</nav>
+{{/unless}}
 {{outlet}}
+

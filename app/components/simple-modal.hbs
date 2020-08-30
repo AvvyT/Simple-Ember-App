@@ -1,0 +1,12 @@
+{{#if enabled}} {{!-- only render if the component's enabled property is true --}}
+<div {{action 'toggleModal'}} class="modal-fog"> {{!-- close the modal when the background overlay is clicked --}}
+    <div class="modal-frame">
+        <div class="modal-title">
+            {{title}}
+        </div>
+        <div class="modal-body">
+            {{yield}} {{!-- spits out whatever is passed inside a block's body --}}
+        </div>
+    </div>
+</div>
+{{/if}}

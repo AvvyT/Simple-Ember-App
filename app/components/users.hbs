@@ -1,0 +1,11 @@
+<p>{{@title}}</p>
+
+<ul class="list">
+    {{#each @users as |user|}}
+    <li class="row">
+        <button type="button" class="btn" {{on 'click' (fn this.showUser user)}}>
+            <span></span>
+        </button>
+    </li>
+    {{/each}}
+</ul>

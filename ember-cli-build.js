@@ -2,9 +2,12 @@
 
 const EmberApp = require('ember-cli/lib/broccoli/ember-app');
 
-module.exports = function(defaults) {
+module.exports = function (defaults) {
   let app = new EmberApp(defaults, {
-    // Add options here
+    // To process your imports and replace them with the contents of their files
+    minifyCSS: {
+      options: { processImport: true }
+    }
   });
 
   // Use `app.import` to add additional libraries to the generated

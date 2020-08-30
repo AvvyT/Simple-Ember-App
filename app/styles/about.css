@@ -1,0 +1,53 @@
+.btn {
+    background-color: aqua;
+    width: 100px;
+    height: 40px;
+    outline: none;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.5s;
+    -webkit-box-shadow: -14px 15px 32px -9px rgba(214, 211, 211, 0.63);
+    -moz-box-shadow: -14px 15px 32px -9px rgba(214, 211, 211, 0.63);
+    box-shadow: -14px 15px 32px -9px rgba(214, 211, 211, 0.63);
+}
+
+.btn span {
+    cursor: pointer;
+    text-align: center;
+    position: relative;
+    transition: 0.7s;
+    color: azure;
+    font-size: 2rem;
+    outline: none;
+}
+
+.btn:hover span {
+    padding-right: 25px;
+}
+
+.btn span:after {
+    content: '\00bb';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    left: -40px;
+    transition: 0.7s;
+}
+
+.btn:hover span:after {
+    opacity: 1;
+    left: 0;
+}
+
+.btn:active {
+    border-color: none;
+}
+
+.btn:hover {
+    background-color: aquamarine;
+}
+
+/* #ember168 {
+    display: none;
+} */

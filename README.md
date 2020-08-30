@@ -1,7 +1,8 @@
 # avvy-ember
 
-This README outlines the details of collaborating on this Ember application.
-A short introduction of this app could easily go here.
+My first Ember-App
+
+<img width="931" alt="Skärmavbild 2020-08-30 kl  20 00 15" src="https://user-images.githubusercontent.com/43029591/91666281-c6218d80-eafb-11ea-8c69-0fdbce16e3a6.png">
 
 ## Prerequisites
 
